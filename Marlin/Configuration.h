@@ -922,10 +922,11 @@
   * BLTOUCH_DELAY 100
   * Selon la video de Edward Braiman, "MKS Gen L-3D Touch", BLTOUCH_DELAY = 375 
   * Selon Teaching Tech,BLTOUCH_DELAY 100 ce que j'ai fait le 2019-09-16
+  * BNA (2020-09-09): Le minimum requis après une erreur de compilation est 200
 */					 
 #define BLTOUCH
 #if ENABLED(BLTOUCH)
-  #define BLTOUCH_DELAY 100   // (ms) Enable and increase if needed
+  #define BLTOUCH_DELAY 200   // (ms) Enable and increase if needed
 #endif					 
 
 /**
